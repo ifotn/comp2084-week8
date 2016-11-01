@@ -86,7 +86,9 @@
       <DependentUpon>ContosoModel.edmx</DependentUpon>
       <LastGenOutput>ContosoModel.cs</LastGenOutput>
     </Content>
+    <Content Include="department-details.aspx" />
     <Content Include="departments.aspx" />
+    <Content Include="js\scripts.js" />
     <Content Include="packages.config" />
     <Content Include="Site.Master" />
     <EntityDeploy Include="ContosoModel.edmx">
@@ -105,6 +107,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
+    <Content Include="student-details.aspx" />
+    <Content Include="students.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +137,13 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="department-details.aspx.cs">
+      <DependentUpon>department-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="department-details.aspx.designer.cs">
+      <DependentUpon>department-details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Department.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
     </Compile>
@@ -154,8 +165,22 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="student-details.aspx.cs">
+      <DependentUpon>student-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student-details.aspx.designer.cs">
+      <DependentUpon>student-details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs">
       <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="students.aspx.cs">
+      <DependentUpon>students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="students.aspx.designer.cs">
+      <DependentUpon>students.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
